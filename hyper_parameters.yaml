@@ -1,10 +1,12 @@
 # Hyperparameters for a MLP with 3 layers: input, hiden, output
 hiden_layer_neurons: 32
-activation_functions: [tanh, tanh, sigmoid]
-dropout_parameters: [False, 0.2, False, 0.8]
-loss: sparse_categorical_crossentropy
+activation_functions: [relu, tanh, softmax]
+dropout_parameters: [True, 0.2, True, 0.4]
+loss: categorical_crossentropy
 metrics: [accuracy]
+# Option are: SGD, RMSprop, Adagrad, Adadelta, Adam, Adamax, Nadam
 optimizer: Adam
-lr: 0.1
+lr: 0.01
 batch_size: 10
 epochs: 100
+normalize_data: False
