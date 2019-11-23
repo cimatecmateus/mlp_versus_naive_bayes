@@ -3,9 +3,9 @@ hiden_layer_neurons: 32
 activation_functions: [relu, tanh, softmax]
 dropout_parameters: [True, 0.2, True, 0.4]
 loss: categorical_crossentropy
-metrics: [accuracy]
+metrics: [categorical_accuracy]
 # Option are: SGD, RMSprop, Adagrad, Adadelta, Adam, Adamax, Nadam
-optimizer: Adam
+optimizer: Adamax
 lr: 0.01
 batch_size: 10
 epochs: 100

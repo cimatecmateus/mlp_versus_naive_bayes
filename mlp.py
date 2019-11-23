@@ -118,8 +118,6 @@ class MLP:
       y_pred.append(np.argmax(predictions[i]) + 1)
     
     y_true = self.y_test.T.tolist()[0]
-    # print('Predict: ', y_pred)
-    # print('True:    ', y_true)
 
     # ground truth on vertical
     print('---> Confusion Matrix <---')
